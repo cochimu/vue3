@@ -12,7 +12,7 @@ const addTodo = () => {
 
 <template>
 <input type="text" size="30" v-model="newTodo">
-<button @click="addTodo()">追加</button>
+<button @click="addTodo()">+1追加する</button>
 
 <ul>
   <li v-for=" (todo, i) in todos" :key="i">{{ todo }}</li>
