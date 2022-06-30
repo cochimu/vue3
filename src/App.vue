@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+// componentsフォルダ以下に作成したcomponentをimport
+import AppHeader from './components/AppHeader.vue';
 
 const todos = ref([])
 const newTodo = ref('')
@@ -15,6 +17,10 @@ const removeTodo = (index) => {
 </script>
 
 <template>
+
+<!-- script内に定義したcomponentを独自タグとして呼び出す -->
+<AppHeader color="red">My ToDo</AppHeader>
+
 <input type="text" size="30" v-model="newTodo">
 <button @click="addTodo()">+1追加する</button>
 

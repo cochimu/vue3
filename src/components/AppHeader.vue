@@ -1,0 +1,13 @@
+<script setup>
+// props親コンポーネントから子コンポーネントに値を送れる
+defineProps(['color'])
+</script>
+
+<template>
+<header>
+  <h1 :style="{'color': color}">
+	<!-- slot内にはデフォルト値を指定できる -->
+	<slot>No Title</slot>
+	</h1>
+</header>
+</template>
