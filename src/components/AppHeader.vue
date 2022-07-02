@@ -1,5 +1,5 @@
 <script setup>
-// props親コンポーネントから子コンポーネントに値を送れる
+// props親から子コンポーネントに値を送れる
 defineProps(['color'])
 </script>
 
